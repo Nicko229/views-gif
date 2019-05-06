@@ -3,7 +3,5 @@ App Vertical
     text Gif App
   Text
     text Second text
-  image
-    source <viewState
- 
-  
+  Image
+    source <animalGif
