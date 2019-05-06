@@ -2,17 +2,20 @@ import App from './App.view.js'
 import React, { Component } from 'react';
 import axios from 'axios';
 
+
+
 export default class AppLogic extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      image: [],
-      text: ''
+      image: []
+      // ,
+      // text: ''
     }
   }
 
   // make get request to api
-  handleClick = () => {
+  componentDidMount = () => {
     const url = `http://api.giphy.com/v1/gifs/search?q=funny+${this.state.text}&api_key=mvLCKvNNtdomExICcEBuKI4hH8xj45Pw`
     axios.get(url)
       .then(res => {
@@ -24,20 +27,28 @@ export default class AppLogic extends Component {
       .catch(error => {
         console.log(error)
       })
-    console.log("handleClick: ", this.state.text)
+    // console.log("handleClick: ", this.state.text)
+    { console.log("this.props: ", this.props) }
   }
 
   // change state onClick
-  handleClick = (e) => {
-    this.setState({ text: e.target.value })
-  }
+  // handleClick = (e) => {
+  //   this.setState({ text: e.target.value })
+  // }
 
   render() {
-    return (<App
-      {...this.state}
-      viewState={this.handleSubmit}
 
-    // {...props} 
+    // const title = "Hello from props";
+
+    return (<App
+      // {...this.state}
+      // {...this.props}
+      // viewState={viewState}
+      animalGif={this.state.image}
+
+    // viewState={this.handleSubmit}
+
+
     // from={this.state.image}
     />)
   }
