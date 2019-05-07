@@ -1,7 +1,14 @@
 App Vertical
   Text
-    text Gif App
+    text Animals Gif App
   Text
-    text Second text
+    text Choose your favourite animal to see in a gif
+
+  Capture
+    value <
+    onChange <
+
+  Button
+
   Image
     source <animalGif
