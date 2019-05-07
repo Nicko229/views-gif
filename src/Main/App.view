@@ -5,10 +5,25 @@ App Vertical
     text Choose your favourite animal to see in a gif
 
   Capture
+    alignSelf center
+    textAlign center
+    borderColor grey
+    borderWidth 1
+    borderStyle solid
+    width 90%
+    marginBottom 10
+    marginTop 10
     value <
     onChange <
+    type text
 
   Button
+    onClick <
 
   Image
     source <animalGif
+    marginTop 10
+    alignSelf center
+    width 60%
+
+

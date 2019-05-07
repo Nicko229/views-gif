@@ -1,5 +1,11 @@
 Button Vertical
   onClick <
+  borderRadius 10
+  width 90%
+  color white
+  background #2eb82e
+  alignItems center
+  alignSelf center
   Label Text
     text Submit
   
